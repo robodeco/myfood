@@ -16,7 +16,7 @@ module.exports = {
   },
   "production": {
     "use_env_variable": "mysql://uvishk39v777wrsn:emas2u011sne3jtk@ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mkwnwpn45readqtp",
-    "dialect": "mysql"
+    "dialect": "mysql",
     "username": process.env.username,
     "password": process.env.password,
     "database": "mkwnwpn45readqtp",
