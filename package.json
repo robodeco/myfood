@@ -1,0 +1,38 @@
+{
+  "name": "foodcodingstars",
+  "version": "1.0.0",
+  "description": "Expanding on Feedbag v 1.0, Project TBD will bring an added homepage and user authentication. Envisioned as a \"Total Food App\", Project TBD will allow users the full functionality they will need to have an efficient digital companion in their kitchen.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "file-system": "^2.2.2",
+    "handlebars": "^4.0.11",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.17.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "sequelize": "^4.37.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScruffyLookingNerfHerder/foodcodingstars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScruffyLookingNerfHerder/foodcodingstars/issues"
+  },
+  "homepage": "https://github.com/ScruffyLookingNerfHerder/foodcodingstars#readme"
+}

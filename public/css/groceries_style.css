@@ -1,0 +1,125 @@
+h1 {
+  border-bottom: dashed;
+  font-size: 250%;
+}
+
+body {
+  background:
+      linear-gradient(
+        rgba(255, 242, 120, .6),
+        rgba(255, 242, 120, .6)
+      ),
+      url('../imgs/grocery_background_2.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: auto;
+}
+
+input.new-item {
+  width: 75%;
+  height: 35px;
+  margin-top: 25px;
+  margin-right: 25px;
+  color: black;
+}
+
+.list-group-item {
+  height: 50px;
+  line-height: 2;
+}
+
+.list-group-item.new-item {
+  height: 100px;
+  background-color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+li.list-group-item.todo-item {
+  background-color: black;
+  color: white;
+}
+
+input.new-item:focus {
+  outline: none;
+}
+
+.list-group-item > button.delete,
+.list-group-item > button.complete {
+  float: right;
+  height: 25px;
+  margin-top: 3px;
+  line-height: 0.5;
+}
+
+.edit {
+  width: 100%;
+}
+
+.bg-light {
+  background-color: black;
+  font-size: 375%;
+}
+
+.card {
+  width: 60%;
+  margin: auto;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  color: white;
+  font-size: 950%;
+}
+
+.jumbotron h1 {
+  font-size: 300%;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  width: 15%;
+  display: inline-block
+}
+
+
+/* -------------------- */
+
+.header {
+  max-width: 500px;
+  align-content: center
+}
+
+.addGroc {
+  background-color: rgba(40, 40, 40, .9);
+  padding: 15px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .favRecipes {
+    background-color: rgba(40, 40, 40, .9);
+    margin-top: 5px
+  }
+  .grocBox {
+    margin-top: 25px;
+  }
+
+  .socBox {
+    margin-top: 15px;
+    align-content: center
+  }
+
+  .shiftL {
+    display: inline-block;
+    margin-left: 9px;
+    max-width: 22%
+  }
+
+  .button {
+    width: 22%;
+    margin: auto
+  }
+}

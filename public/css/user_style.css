@@ -1,0 +1,155 @@
+/* Hover.css Copyright Ian Lunn 2017. Generated with Sass.  */
+
+body {
+  background-image: url('../imgs/grocery-list-bg.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 500%;
+  text-align: center;
+  color: white
+}
+
+body.loading .modal {
+  overflow: hidden
+}
+
+body.loading .modal {
+  display: block
+}
+
+.modal {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8 )
+              url('../images/ajax-loader.gif')
+              50% 50%
+              no-repeat;
+}
+
+.chalkDiv {
+  max-width: 100%;
+  margin-top: -15px;
+}
+
+.chalkPic {
+  width: 100%;
+}
+
+.roundPanel {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+/* #E4A561 */
+.userPanel {
+  background-color: rgba(255,255,255,.7);
+  padding-top: 20px;
+  border-style: solid;
+  border-color: rgba(155,155,155, .3);
+  border-width: medium
+}
+
+.card-title {
+  border-top: solid;
+  border-color: grey;
+  border-width: thin;
+  padding-top: 15px
+}
+
+.card-body {
+  color: grey;
+  text-align: center;
+}
+
+.favAll {
+  background-color: rgba(40, 40, 40, .9);
+  min-height: 864px;
+  padding: 15px;
+  margin-top: 10px
+}
+
+.recRow {
+  border-color: white;
+  border-style: solid;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 30px;
+  height: 150px;
+  background-color:grey
+}
+
+.favBord {
+  margin-top: 30px;
+  border-bottom-style: dotted;
+  border-width: medium;
+  border-color: white
+}
+
+.restcontainers {
+  background-image: url("../imgs/white.jpeg");
+  color: black;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid black;
+  border-radius: 50px;
+  padding: 12px;
+  font-family: Menu, Helvetica, Arial, sans-serif;
+
+}
+
+
+.reccontainers{
+  background-image: url("../imgs/white.jpeg");
+  color: black;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid black;
+  border-radius: 50px;
+  padding: 20px;
+  font-family: Menu, Helvetica, Arial, sans-serif;
+  font-size: 30px;
+
+}
+
+
+@font-face {
+  font-family: Menu;
+  src: url("../imgs/bold.otf");
+}
+
+@media only screen and (max-width: 1000px) {
+  .favAll {
+    background-color: rgba(40, 40, 40, .9);
+    margin-top: 5px
+  }
+  .grocBox {
+    margin-top: 25px;
+  }
+
+  .socBox {
+    margin-top: 15px;
+    align-content: center
+  }
+
+  .shiftL {
+    display: inline;
+    margin-left: 9px
+  }
+
+  .button {
+    width: 22%;
+    display: inline-block;
+    margin: auto
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Coding Stars | FeedBag</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel = "icon" type = "image/png" href = "./imgs/feedbagicon.png">
+</head>
+
+<body>
+
+
+  <div class="total">
+
+    <div class="card">
+      <div class="card-body">
+        <div class="feedbag">
+          <img class="letter image-fluid" id="F" src="./imgs/F.svg">
+          <img class="letter image-fluid" id="E" src="./imgs/E.svg">
+          <img class="letter image-fluid" id="E2" src="./imgs/E2.svg">
+          <img class="letter image-fluid" id="D" src="./imgs/D.svg">
+          <img class="letter image-fluid" id="B" src="./imgs/B.svg">
+          <img class="letter image-fluid" id="A" src="./imgs/A.svg">
+          <img class="letter image-fluid" id="G" src="./imgs/G.svg">
+          <p class="lead">Discover Your Cravings!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- signout button -->
+
+    <h3 id="usernamedisplay" class="UNDisplay"></h3>
+    <div id="user info">
+    <div id="signinorout"></div>
+
+    <div id="prevresults" class="previouscontainer"></div>
+  </div>
+    <!-- Questionnaire !-->
+
+
+    <div class="card">
+
+      <div class="card-body">
+
+          <div class="form-group">
+
+
+            <label for="exampleSelect1" id="culture-input">What are you in the mood for?</label>
+
+
+            <div id="BtnDisplay"></div>
+
+            <form>
+              <label for="exampleSelect1">How much are you willing to spend?</label>
+
+              <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <div class="input-group-addon money">$</div>
+                <input type="number" class="form-control priceform" id="inlineFormInputGroup" placeholder="ex 10">
+              </div>
+
+
+          </div>
+
+          <button type="button" class="button" data-toggle="modal" data-target="#success" id="submit" type="submit">Get Your Feedbag</button>
+          </form>
+
+
+          <div class="modal fade" id="fvmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content modal-invalid">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="fvmodalbody">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="invalid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content modal-invalid">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modalbody">
+                  Please provide a dollar amount!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="invalid2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content modal-invalid">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modalbody">
+                  Please pick at least one culture!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="invalid3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content modal-invalid">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modalbody">
+                  Please pick at least one culture and set your price!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <button class="button " id="submit ">Get Your FeedBag</button> -->
+
+        </div>
+      </div>
+
+      <div class="results col-12 ">
+        <div class="card half-card ">
+          <div class="restaurants ">
+            Restaurants
+          </div>
+          <div class="card-body response " id="restaurants">
+          </div>
+        </div>
+
+        <div class="card half-card ">
+          <div class="recipes ">
+            Recipes
+          </div>
+          <div class="card-body response " id="recipes">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+<script src="./JS/indexjs.js "></script>
+
+
+</html>

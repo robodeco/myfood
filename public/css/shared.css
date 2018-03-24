@@ -1,0 +1,84 @@
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.butWrap {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(47, 174, 29, .6);
+  margin-top: 5px;
+  align-content: center;
+  border-style: solid;
+  border-color: rgb(19, 81, 73, .2);
+}
+
+.button {
+  width: 75%;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.button:active {
+  transform: translateY(4px);
+  transition-duration: .01s
+}
+
+.butDiv {
+  height: 50px
+}
+
+/* for future social media sharing support */
+/* .socBox {
+  width: 50%;
+  background-color: rgba(40, 40, 40, .9);
+  min-height: 50px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+} */
+
+
+@media only screen and (max-width: 500px) {
+    .header {
+      margin-left: 3%
+    }
+    .button {
+      max-width: 20%;
+      display: inline-block;
+      margin: auto
+    }
+
+    .shiftL {
+      display: inline;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header {
+      margin-left: 2%
+    }
+
+    .button {
+      max-width: 20%;
+      display: inline-block;
+      margin: auto
+    }
+
+    .grocBox {
+      margin-top: 100px;
+    }
+}

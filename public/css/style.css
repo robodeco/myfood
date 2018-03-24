@@ -1,0 +1,264 @@
+body {
+  background-image: url("../imgs/fruit.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+}
+
+.total {
+  margin: auto;
+  width: 50%;
+}
+
+.jumbotron {
+  background-image: url("../imgs/form.jpeg");
+  margin: auto;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  border-color: black;
+  height: 400px;
+}
+
+.title {
+  font-size: 200px;
+}
+
+.half-card .card-body {
+  margin: auto;
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+div.card.half-card{
+  width:50%;
+  float:left;
+}
+
+.results {
+  width: 100%;
+}
+
+.card-header {
+  background-color: #483D8B;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.card {
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../imgs/form.jpeg");
+  border-radius: 50px;
+}
+
+.form-group {
+  margin: auto;
+  color: white;
+  width: 90%;
+  padding-top: 10px;
+}
+
+.button {
+  background-color: #FFFF00;
+  border-style: outset;
+  color: black;
+  margin: 20px;
+  text-align: center;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #00FF00
+}
+
+h1 {
+  color: #fff;
+  font-family: Writing, Helvetica, Arial, sans-serif;
+  font-size: 150px;
+  margin-bottom: 0;
+}
+
+.lead {
+  color: #fff;
+  font-size: 82px;
+  font-family: Writing, Helvetica, Arial, sans-serif;
+
+
+}
+
+.restaurants {
+  font-family: Writing, Helvetica, Arial, sans-serif;
+  float: left;
+  color: white;
+  font-size: 60px;
+  border-bottom: 2.5px solid white;
+}
+
+.recipes {
+  font-family: Writing, Helvetica, Arial, sans-serif;
+  float: left;
+  color: white;
+  font-size: 60px;
+  border-bottom: 2.5px solid white;
+}
+
+label {
+  font-family: Writing, Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: yellow;
+}
+
+.money{
+  font-family: Writing, Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: yellow;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.priceform{
+  height: 40px;
+  margin-top: 18px;
+}
+
+.countries {
+  background-image: url("../imgs/white.jpeg");
+  color: black;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid black;
+  border-radius: 50px;
+  padding: 12px;
+
+}
+
+.norestresults {
+  background-image: url("../imgs/white.jpeg");
+  font-size: 30px;
+  color: black;
+  font-family: Menu, Helvetica, Arial, sans-serif;
+}
+
+.links {
+  font-family: Menu, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+.cuisineButton {
+  background-image: url("../imgs/wall.jpeg");
+  margin: 5px;
+  color: black;
+  border-color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.clicked{
+  background-color: blue;
+}
+
+.cuisineButton:hover {
+  background: #FF0000;
+  -webkit-transform: scale(1.1);
+}
+
+.reciperesponse{
+  background-image: url("../imgs/white.jpeg");
+  color: black;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid black;
+  border-radius: 50px;
+  padding: 5px;
+
+}
+
+.modal-content{
+  background-image: url("../imgs/top.jpeg");
+  font-family: Writing, Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: black;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.signinpopup{
+  margin-top: 20px;
+}
+
+.UNDisplay{
+  text-align: center;
+  font-family: Food, Helvetica, Arial, sans-serif;
+  font-size: 90px;
+
+}
+
+.signbutton{
+  float: left;
+  background-image: url("../imgs/wall.jpeg");
+  margin: 5px;
+  color: black;
+  border-color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.signbutton:hover {
+  background: #FF0000;
+  -webkit-transform: scale(1.1);
+}
+
+.previousbutton{
+  float: right;
+  background-image: url("../imgs/wall.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 5px;
+  color: black;
+  border-color: black;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.previousbutton:hover{
+  background: #FF0000;
+  -webkit-transform: scale(1.1);
+}
+
+.recipeimg{
+  border-style: groove
+
+
+}
+
+
+
+
+@font-face {
+  font-family: Food;
+  src: url("../imgs/food.ttf");
+}
+
+@font-face {
+  font-family: Writing;
+  src: url("../imgs/writing.otf");
+}
+
+@font-face {
+  font-family: Menu;
+  src: url("../imgs/bold.otf");
+}
