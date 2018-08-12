@@ -26,7 +26,8 @@ scope: ['profile']
 
 //auth logout
 router.get('/logout', (req, res)=>{
-  res.send('logging out');
+  req.logout()
+  res.redirect('/');
 })
 
 module.exports = router;

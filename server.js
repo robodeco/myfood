@@ -5,6 +5,8 @@ var db = require('./models');
 var PORT = process.env.PORT || 3000;
 var bodyParser = require("body-parser");
 const app = express();
+
+
 app.use(require('cookie-parser')());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(require('express-session')({

@@ -19,6 +19,7 @@
 
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20');
+const FacebookStrategy = require('passport-facebook').Strategy;
 const keys = require('./keys');
 const db = require('../models');
 
@@ -44,15 +45,6 @@ passport.use(
         //passport callback function
         console.log("passport callback function");
         console.log(typeof profile.id);
-
-        //     return db.User.findOrCreate({ googleId: profile.id },
-        //       function(err, user) {
-        //       return done(err,user);
-        //     });
-        //
-        //
-        //   })
-        // );
         db.User.findOne({
           googleId: profile.id
         }).then((currentUser) => {
@@ -73,5 +65,35 @@ passport.use(
         })
       })
     );
+
+//Alex FB additions. delete from here down if broken
+passport.use(
+  new FacebookStrategy({
+  clientID: keys.facebook.clientID,
+  clientSecret: keys.facebook.clientSecret,
+  callbackURL: " https://myfoodgw.herokuapp.com/",
+  profileFields: ['id','displayName', 'photos', 'email']
+  },
+  (accessToken, refreshToken, profile, done) => {
+    console.log(profile)
+    db.User.findOne({
+      googleId: profile.id
+    }).then((currentUser) => {
+      if (currentUser) {
+      console.log('user is ', currentUser);
+      done(null, currentUser);
+    } else {
+      new db.User({
+        googleId: profile.id,
+        username: profile.displayName
+      }).save().then((newUser) => {
+        console.log('created new user: ', newUser);
+        done(null, newUser);
+      })
+    }
+  })
+})
+);
+
 
 module.exports = passport;
