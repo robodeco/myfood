@@ -41,7 +41,7 @@ app.get("/user", function(req, res) {
 
 
 require("./routes/api-routes.js")(app);
-require("./routes/htmlRoutes.js")(app);
+require("./routes/htmlroutes.js")(app);
 var routes = require("./controllers/routes.js");
 app.use(express.static('public'));
 app.use(routes);
