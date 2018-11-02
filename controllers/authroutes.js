@@ -23,7 +23,24 @@ authrouter.get('/google/redirect', passport.authenticate('google'), (req, res) =
 
     //res.send(req.user)
     res.redirect('/userpage');
+    // res.redirect('https://91e21671.ngrok.io/userpage');
     // req.user();
   });
+
+//
+authrouter.get('/facebook',
+    passport.authenticate('facebook'));
+
+  authrouter.get('/facebook/callback',
+    passport.authenticate('facebook', {failureRedirect: '/login' }),
+    function(req, res) {
+      //successsful authentication, redirect home
+      res.redirect('/userpage');
+    });
+
+authrouter.get('/logout', function(req,res){
+  req.logout();
+  res.redirect('/');
+})
 
 module.exports = authrouter;

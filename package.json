@@ -15,8 +15,10 @@
     "handlebars": "^4.0.11",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
+    "ngrok": "^3.0.1",
     "nodemon": "^1.17.2",
     "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
     "passport-google-oauth20": "^1.0.0",
     "sequelize": "^4.37.3"
   },
@@ -27,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ScruffyLookingNerfHerder/foodcodingstars.git"
+    "url": "https://github.com/ScruffyLookingNerfHerder/foodcodingstars.git"
   },
   "author": "",
   "license": "ISC",

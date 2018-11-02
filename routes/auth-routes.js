@@ -27,4 +27,6 @@ router.get('/google/redirect', passport.authenticate('google',{
     res.send('you reached the redirect URI');
 });
 
+
+
 module.exports = router;

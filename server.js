@@ -5,6 +5,8 @@ var db = require('./models');
 var PORT = process.env.PORT || 3000;
 var bodyParser = require("body-parser");
 const app = express();
+
+
 app.use(require('cookie-parser')());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(require('express-session')({
@@ -39,7 +41,7 @@ app.get("/user", function(req, res) {
 
 
 require("./routes/api-routes.js")(app);
-require("./routes/htmlRoutes.js")(app);
+require("./routes/htmlroutes.js")(app);
 var routes = require("./controllers/routes.js");
 app.use(express.static('public'));
 app.use(routes);
@@ -47,7 +49,7 @@ app.use(routes);
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
+  app.listen(process.env.PORT || 3000, function() {
     console.log("App listening on PORT " + PORT);
   });
 });

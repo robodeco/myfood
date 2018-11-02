@@ -13,6 +13,13 @@ body {
   width: 50%;
 }
 
+#fb {
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
 .jumbotron {
   background-image: url("../imgs/form.jpeg");
   margin: auto;
